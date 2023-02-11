@@ -462,8 +462,8 @@ process consolidate {
     path predictions
 
     """
-    python /benchmark/manage_assessment_data.py -m $challenge_stubs -b $benchmark_data -o $result_file_path
-    python /benchmark/merge_data_model_files.py -p $participants  -m $challenge_stubs -r $result_file_path -a $assessment_out -o $data_model_export_dir
+    python3 /benchmark/manage_assessment_data.py -m $challenge_stubs -b $benchmark_data -o $result_file_path
+    python3 /benchmark/merge_data_model_files.py -p $participants  -m $challenge_stubs -r $result_file_path -a $assessment_out -o $data_model_export_dir
     """
 }
 
